@@ -1,0 +1,396 @@
+/* General body styles */
+body {
+    background-color: #000000; /* Completely black background color */
+    color: white; /* Default text color */
+}
+
+.hero-section {
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), 
+                url('https://media.licdn.com/dms/image/D4D12AQHqUA7wR07EmA/article-cover_image-shrink_720_1280/0/1687332820991?e=2147483647&v=beta&t=PEKFX8hBYd7uOj4WsF9Vpd30OWvkjZsVCZbncySmcHo');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: #ccc;
+}
+
+ 
+
+/* Cards section styles */
+.cards-section {
+    background-color: #000000; /* Black background color */
+    color: white;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  /* Firefox */
+}
+
+.card-container {
+    display: inline-block;
+    width: 250px;  /* Increased width */
+    margin-right: 20px;
+    position: relative;
+    transition: transform 0.3s ease, border 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    background-color: #000000; /* Black background color */
+    color: white;
+    border: none; /* Remove default border */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 300px;  /* Increased height */
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card .card-body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.card-title, .card-text {
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+/* Card background images */
+.card-bg1 { background-image: url('https://media.istockphoto.com/id/1347375207/photo/hands-holding-sad-face-hiding-behind-happy-face-bipolar-and-depression-mental-health-split.jpg?s=612x612&w=0&k=20&c=2GNbp0JsFZzleTXzrmGSUHReCOQL7TotSMsk5JLc6As='); background-repeat: no-repeat; background-size: cover; }
+.card-bg2 { background-image: url('https://media.istockphoto.com/id/1457433817/photo/group-of-healthy-food-for-flexitarian-diet.jpg?s=612x612&w=0&k=20&c=v48RE0ZNWpMZOlSp13KdF1yFDmidorO2pZTu2Idmd3M='); background-repeat: no-repeat; background-size: cover; }
+.card-bg3 { background-image: url('https://romebusinessschool.com/wp-content/uploads/2023/10/adwefdgv.webp'); }
+.card-bg4 { background-image: url('https://images.squarespace-cdn.com/content/v1/5c4f6ba1e2ccd1ee6075495d/6ddc5aa9-dfcf-4029-89e9-8babc9359424/woman-skincare-self-care.jpg'); background-repeat: no-repeat; background-size: cover; }
+.card-bg5 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0w7bPPydb85g4_rzhnA5lH83R4u26gyTgAg&s'); background-repeat: no-repeat; background-size: cover; }
+.card-bg6 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LhtRKlGl2Q1N2Q10_CEYjJMYY92U1Y2Ffg&s'); background-repeat: no-repeat; background-size: cover; }
+.card-bg7 { background-image: url('https://cdn.pixabay.com/photo/2020/06/06/14/00/jump-5266634_640.jpg'); background-repeat: no-repeat; background-size: cover; }
+
+.about-section {
+    background-color: #000000; /* Black background color */
+    color: white;
+    padding: 50px 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+
+.faq-header {
+    background-color: #747678;
+    padding: 20px;
+    color: black;
+    border: 1px solid #5c5b5b;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-header:hover {
+    background-color: #363737;
+}
+
+.faq-body {
+    border: 1px solid #747678;
+    border-top: none;
+    padding: 20px;
+    background-color: #747678;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.faq-icon {
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+footer .container {
+    padding: 20px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .col-md-4 {
+    margin-bottom: 20px;
+}
+
+footer .text-white {
+    color: #747678;
+    text-decoration: none;
+}
+
+footer .pt-3 {
+    padding-top: 1rem;
+}
+
+/* Additional styles */
+.text-center {
+    text-align: center;
+    margin-top: 0;
+     
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+.container {
+    margin-top: 50px;
+}
+
+.smiley {
+    font-size: 50px;
+    animation: wave 2s infinite;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.smiley-inline {
+    font-size: 50px;
+    margin-left: 10px;
+    animation: wave 2s infinite;
+    animation-delay: 3s; /* Delay the waving animation to sync with the move */
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* src/components/style.css */
+
+/* src/components/style.css */
+
+.card-bg-enabled {
+    background-color: #767979;
+    border-color: aliceblue;
+    color: #020202;
+  }
+  
+  .card-bg-disabled {
+    background-color: #a49f9f;
+    border-color: aliceblue;
+    pointer-events: none;
+    color: #ccc;
+    opacity: 0.6;
+  }
+
+
+
+  .reset-password-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .reset-password-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .reset-password-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .reset-password-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .reset-password-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .reset-password-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  
+  .reset-password-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .success-message {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.hidden {
+  background-color: #f0f0f0;
+}
+
+.revealed {
+  background-color: #ffeb3b; /* Pale yellow color */
+  color: #000;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .card {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    background-color: #f0f0f0;
+  }
+  
+  .revealed {
+    background-color: #ffeb3b; /* Pale yellow color */
+    color: #000;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+  }
+  
+  .follow-up {
+    margin-top: 10px;
+  }
+  
+  .follow-up p {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    margin: 5px;
+  }
